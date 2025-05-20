@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./teste.front/WhatsApp\ Image\ 2025-05-19\ at\ 20.02.17.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  
+}
+
+@media (max-width: 960px) {
+  body {
+  background-image: url(./teste.front/WhatsApp\ Image\ 2025-05-19\ at\ 20.02.17.jpeg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 16px;
+}
+
+#profile img {
+  width: 112px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+#profile p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #ffffffa0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li {
+  width: 100%;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+ul li a .icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #ffffff;
+}
+
+ul li a:hover .icon {
+  color: #f5e7c6;
+}
+
+ul li a span {
+  flex: 1;
+  text-align: left;
+}
+
+footer {
+  margin-top: 24px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffffaa;
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 14px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* escurece suavemente o fundo */
+  z-index: -1;
+}
+
+ul li a,
+ul li a:visited {
+  color: #dcc99a;
+}
+
+ul li a:hover {
+  color: #f5e7c6; /* exemplo de cor no hover */
+}
+
+footer {
+  position: relative; /* garante que o footer fique dentro do fluxo */
+  margin-top: 230px; /* aumenta o espaço acima, empurrando para baixo */
+  font-size: 14px;
+  text-align: center;
+  color: #dcc99a; /* cor harmônica com o banner */
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 8px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 960px) {
+footer {
+  margin-top: 150px; /* aumenta o espaço acima, empurrando para baixo */
+  
+}
+}
